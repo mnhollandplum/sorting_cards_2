@@ -7,4 +7,7 @@ class Deck
   def count
     @cards.count
   end
+
+  def sort
+  end
 end

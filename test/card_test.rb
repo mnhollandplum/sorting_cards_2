@@ -18,4 +18,8 @@ class CardTest < Minitest::Test
     assert_equal "Spades", card.suit
   end
 
+  def test_card_attributes_can_be_added_together
+    card = Card.new("Ace", "Spades")
+    assert_equal 144, card.total_card_value
+  end
 end
