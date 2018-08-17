@@ -6,7 +6,7 @@ class Card
   end
 
   def card_value_reassigned
-     card_value = {
+     {
        "2" => 20,
        "3" => 30,
        "4" => 40,
@@ -21,10 +21,10 @@ class Card
        "King" => 130,
        "Ace" => 140
        }
-   end
+  end
 
    def card_suit_value
-     card_suit = {
+      {
        "Clubs" => 1,
        "Diamonds" => 2,
        "Hearts" => 3,
