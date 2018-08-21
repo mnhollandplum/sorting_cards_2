@@ -1,3 +1,4 @@
+require 'pry'
 class Round
   attr_reader :deck, :guesses, :number_correct
   def initialize(deck)
@@ -14,6 +15,7 @@ class Round
     card_attributes = "#{response[:value]} of #{response[:suit]}"
      guess = Guess.new(card_attributes, current_card)
      @guesses << guess
+     binding.pry
      if guess.feedback == "Correct!"
        @number_correct += 1
      end
